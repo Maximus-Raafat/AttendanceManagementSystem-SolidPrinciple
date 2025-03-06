@@ -1,0 +1,62 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "email": "admin@example.com",
+      "password": "123456",
+      "token": "admin-token"
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "name": "Ahmed",
+      "position": "Developer",
+      "email": "ahmed@example.com",
+      "status": "active"
+    },
+    {
+      "id": 2,
+      "name": "Sara",
+      "position": "Designer",
+      "email": "sara@example.com",
+      "status": "inactive"
+    },
+    {
+      "id": 3,
+      "name": "Ahmed",
+      "position": "Developer",
+      "email": "ahmed@example.com",
+      "status": "active"
+    },
+    {
+      "id": 4,
+      "name": "maximos",
+      "position": "tester",
+      "email": "tester@yahoo.com",
+      "status": "active"
+    },
+    {
+      "id": 5,
+      "name": "max",
+      "position": "noon",
+      "email": "max@gmail.com",
+      "status": "active"
+    },
+    {
+      "id": 6
+    },
+    {
+      "id": 7
+    }
+  ],
+  "attendance": [
+    {
+      "id": "1",
+      "employeeId": 1,
+      "date": "2025-02-15",
+      "status": "Present"
+    }
+  ]
+}

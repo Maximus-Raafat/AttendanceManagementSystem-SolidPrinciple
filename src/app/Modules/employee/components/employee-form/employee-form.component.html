@@ -1,0 +1,20 @@
+<h3>{{ config.data?.employee ? 'Edit Employee' : 'Add Employee' }}</h3>
+<form [formGroup]="employeeForm">
+  <label>Name:</label>
+  <input type="text" pInputText formControlName="name" />
+
+  <label>Position:</label>
+  <input type="text" pInputText formControlName="position" />
+
+  <label>Email:</label>
+  <input type="email" pInputText formControlName="email" />
+
+  <label>Status:</label>
+  <input type="text" pInputText formControlName="status" />
+
+  <div class="p-dialog-footer">
+    <button pButton label="Save" icon="pi pi-check" (click)="saveEmployee()"></button>
+    <button pButton label="Delete" icon="pi pi-trash" class="p-button-danger" (click)="deleteEmployee()"></button>
+    <button pButton label="Cancel" icon="pi pi-times" class="p-button-secondary" (click)="ref.close()"></button>
+  </div>
+</form>

@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="card">
+        <p-table [value]="(employeeList$ | async) || []" [tableStyle]="{ 'min-width': '50rem' }" responsiveLayout="scroll">
+            <ng-template pTemplate="header">
+                <tr>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Email</th> 
+                    <th>Status</th>
+                    <th>Action</th>
+
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-employee>
+                <tr class="selectorEmployee">
+                    <td>{{ employee.name }}</td>
+                    <td>{{ employee.position }}</td>
+                    <td>{{ employee.email }}</td>
+                    <td>{{ employee.status }}</td>
+                    <td>
+                        <button pButton label="Edit" icon="pi pi-pencil" (click)="openDialog(employee)"></button>
+                        <button pButton label="Delete" icon="pi pi-trash" class="p-button-danger" (click)="deleteEmployeeDialog(employee)"></button>
+                      </td>
+                </tr>
+            </ng-template>
+        </p-table>
+        
+    </div>
+    <button pButton label="Add Employee" icon="pi pi-plus" class="p-button-success" (click)="openDialog()"></button>
+    
+</div>
